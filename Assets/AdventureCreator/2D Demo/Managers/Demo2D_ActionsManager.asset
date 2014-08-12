@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0c43bf7c11a40f386c183fa9601d86, type: 3}
+  m_Name: Demo2D_ActionsManager
+  m_EditorClassIdentifier: 
+  customFolderPath: AdventureCreator/Scripts/Actions
+  folderPath: AdventureCreator/Scripts/Actions
+  defaultClass: 25
+  AllActions:
+  - fileName: ActionCameraCrossfade
+    title: 'Camera: Crossfade'
+    isEnabled: 1
+  - fileName: ActionFade
+    title: 'Camera: Fade'
+    isEnabled: 1
+  - fileName: ActionCameraShake
+    title: 'Camera: Shake'
+    isEnabled: 1
+  - fileName: ActionCameraSplit
+    title: 'Camera: Split-screen'
+    isEnabled: 1
+  - fileName: ActionCamera
+    title: 'Camera: Switch'
+    isEnabled: 1
+  - fileName: ActionCharAnim
+    title: 'Character: Animate'
+    isEnabled: 1
+  - fileName: ActionCharRender
+    title: 'Character: Change rendering'
+    isEnabled: 1
+  - fileName: ActionCharFace
+    title: 'Character: Face object'
+    isEnabled: 1
+  - fileName: ActionCharHold
+    title: 'Character: Hold object'
+    isEnabled: 1
+  - fileName: ActionCharMove
+    title: 'Character: Move along path'
+    isEnabled: 1
+  - fileName: ActionCharPathFind
+    title: 'Character: Move to point'
+    isEnabled: 1
+  - fileName: ActionCharFollow
+    title: 'Character: NPC follow'
+    isEnabled: 1
+  - fileName: ActionCharPortrait
+    title: 'Character: Switch Portrait'
+    isEnabled: 1
+  - fileName: ActionContainerSet
+    title: 'Container: Add or remove'
+    isEnabled: 1
+  - fileName: ActionContainerCheck
+    title: 'Container: Check'
+    isEnabled: 1
+  - fileName: ActionContainerOpen
+    title: 'Container: Open'
+    isEnabled: 1
+  - fileName: ActionSpeech
+    title: 'Dialogue: Play speech'
+    isEnabled: 1
+  - fileName: ActionConversation
+    title: 'Dialogue: Start conversation'
+    isEnabled: 1
+  - fileName: ActionDialogOption
+    title: 'Dialogue: Toggle option'
+    isEnabled: 1
+  - fileName: ActionScene
+    title: 'Engine: Change scene'
+    isEnabled: 1
+  - fileName: ActionNavMesh
+    title: 'Engine: Change scene setting'
+    isEnabled: 1
+  - fileName: ActionTimescale
+    title: 'Engine: Change timescale'
+    isEnabled: 1
+  - fileName: ActionSceneCheck
+    title: 'Engine: Check scene'
+    isEnabled: 1
+  - fileName: ActionEndGame
+    title: 'Engine: End game'
+    isEnabled: 1
+  - fileName: ActionSystemLock
+    title: 'Engine: Manage systems'
+    isEnabled: 1
+  - fileName: ActionPause
+    title: 'Engine: Pause game'
+    isEnabled: 1
+  - fileName: ActionSound
+    title: 'Engine: Play sound'
+    isEnabled: 1
+  - fileName: ActionRunActionList
+    title: 'Engine: Run ActionList'
+    isEnabled: 1
+  - fileName: ActionInteraction
+    title: 'Hotspot: Change interaction'
+    isEnabled: 1
+  - fileName: ActionRename
+    title: 'Hotspot: Rename'
+    isEnabled: 1
+  - fileName: ActionInventorySet
+    title: 'Inventory: Add or remove'
+    isEnabled: 1
+  - fileName: ActionInventoryCheck
+    title: 'Inventory: Check'
+    isEnabled: 1
+  - fileName: ActionInventoryCrafting
+    title: 'Inventory: Crafting'
+    isEnabled: 1
+  - fileName: ActionInventorySelect
+    title: 'Inventory: Select'
+    isEnabled: 1
+  - fileName: ActionMenuState
+    title: 'Menu: Change state'
+    isEnabled: 1
+  - fileName: ActionAnim
+    title: 'Object: Animate'
+    isEnabled: 1
+  - fileName: ActionSendMessage
+    title: 'Object: Send message'
+    isEnabled: 1
+  - fileName: ActionParent
+    title: 'Object: Set parent'
+    isEnabled: 1
+  - fileName: ActionTeleport
+    title: 'Object: Teleport'
+    isEnabled: 1
+  - fileName: ActionTransform
+    title: 'Object: Transform'
+    isEnabled: 1
+  - fileName: ActionVisible
+    title: 'Object: Visibility'
+    isEnabled: 1
+  - fileName: ActionPlayerCheck
+    title: 'Player: Check'
+    isEnabled: 1
+  - fileName: ActionPlayerLock
+    title: 'Player: Constrain'
+    isEnabled: 1
+  - fileName: ActionPlayerSwitch
+    title: 'Player: Switch'
+    isEnabled: 1
+  - fileName: ActionPlayMaker
+    title: 'Third-Party: PlayMaker'
+    isEnabled: 1
+  - fileName: ActionVarCheck
+    title: 'Variable: Check'
+    isEnabled: 1
+  - fileName: ActionVarSet
+    title: 'Variable: Set'
+    isEnabled: 1
+  EnabledActions:
+  - fileName: ActionCameraCrossfade
+    title: 'Camera: Crossfade'
+    isEnabled: 1
+  - fileName: ActionFade
+    title: 'Camera: Fade'
+    isEnabled: 1
+  - fileName: ActionCameraShake
+    title: 'Camera: Shake'
+    isEnabled: 1
+  - fileName: ActionCameraSplit
+    title: 'Camera: Split-screen'
+    isEnabled: 1
+  - fileName: ActionCamera
+    title: 'Camera: Switch'
+    isEnabled: 1
+  - fileName: ActionCharAnim
+    title: 'Character: Animate'
+    isEnabled: 1
+  - fileName: ActionCharRender
+    title: 'Character: Change rendering'
+    isEnabled: 1
+  - fileName: ActionCharFace
+    title: 'Character: Face object'
+    isEnabled: 1
+  - fileName: ActionCharHold
+    title: 'Character: Hold object'
+    isEnabled: 1
+  - fileName: ActionCharMove
+    title: 'Character: Move along path'
+    isEnabled: 1
+  - fileName: ActionCharPathFind
+    title: 'Character: Move to point'
+    isEnabled: 1
+  - fileName: ActionCharFollow
+    title: 'Character: NPC follow'
+    isEnabled: 1
+  - fileName: ActionCharPortrait
+    title: 'Character: Switch Portrait'
+    isEnabled: 1
+  - fileName: ActionContainerSet
+    title: 'Container: Add or remove'
+    isEnabled: 1
+  - fileName: ActionContainerCheck
+    title: 'Container: Check'
+    isEnabled: 1
+  - fileName: ActionContainerOpen
+    title: 'Container: Open'
+    isEnabled: 1
+  - fileName: ActionSpeech
+    title: 'Dialogue: Play speech'
+    isEnabled: 1
+  - fileName: ActionConversation
+    title: 'Dialogue: Start conversation'
+    isEnabled: 1
+  - fileName: ActionDialogOption
+    title: 'Dialogue: Toggle option'
+    isEnabled: 1
+  - fileName: ActionScene
+    title: 'Engine: Change scene'
+    isEnabled: 1
+  - fileName: ActionNavMesh
+    title: 'Engine: Change scene setting'
+    isEnabled: 1
+  - fileName: ActionTimescale
+    title: 'Engine: Change timescale'
+    isEnabled: 1
+  - fileName: ActionSceneCheck
+    title: 'Engine: Check scene'
+    isEnabled: 1
+  - fileName: ActionEndGame
+    title: 'Engine: End game'
+    isEnabled: 1
+  - fileName: ActionSystemLock
+    title: 'Engine: Manage systems'
+    isEnabled: 1
+  - fileName: ActionPause
+    title: 'Engine: Pause game'
+    isEnabled: 1
+  - fileName: ActionSound
+    title: 'Engine: Play sound'
+    isEnabled: 1
+  - fileName: ActionRunActionList
+    title: 'Engine: Run ActionList'
+    isEnabled: 1
+  - fileName: ActionInteraction
+    title: 'Hotspot: Change interaction'
+    isEnabled: 1
+  - fileName: ActionRename
+    title: 'Hotspot: Rename'
+    isEnabled: 1
+  - fileName: ActionInventorySet
+    title: 'Inventory: Add or remove'
+    isEnabled: 1
+  - fileName: ActionInventoryCheck
+    title: 'Inventory: Check'
+    isEnabled: 1
+  - fileName: ActionInventoryCrafting
+    title: 'Inventory: Crafting'
+    isEnabled: 1
+  - fileName: ActionInventorySelect
+    title: 'Inventory: Select'
+    isEnabled: 1
+  - fileName: ActionMenuState
+    title: 'Menu: Change state'
+    isEnabled: 1
+  - fileName: ActionAnim
+    title: 'Object: Animate'
+    isEnabled: 1
+  - fileName: ActionSendMessage
+    title: 'Object: Send message'
+    isEnabled: 1
+  - fileName: ActionParent
+    title: 'Object: Set parent'
+    isEnabled: 1
+  - fileName: ActionTeleport
+    title: 'Object: Teleport'
+    isEnabled: 1
+  - fileName: ActionTransform
+    title: 'Object: Transform'
+    isEnabled: 1
+  - fileName: ActionVisible
+    title: 'Object: Visibility'
+    isEnabled: 1
+  - fileName: ActionPlayerCheck
+    title: 'Player: Check'
+    isEnabled: 1
+  - fileName: ActionPlayerLock
+    title: 'Player: Constrain'
+    isEnabled: 1
+  - fileName: ActionPlayerSwitch
+    title: 'Player: Switch'
+    isEnabled: 1
+  - fileName: ActionPlayMaker
+    title: 'Third-Party: PlayMaker'
+    isEnabled: 1
+  - fileName: ActionVarCheck
+    title: 'Variable: Check'
+    isEnabled: 1
+  - fileName: ActionVarSet
+    title: 'Variable: Set'
+    isEnabled: 1

@@ -1,0 +1,652 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14200\viewh16060\viewkind0
+\deftab720
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ql\qnatural\pardirnatural
+
+\f0\fs24 \cf0 Version 1.33a:\
+\
+NOTE:\
+The GlobalVariables script has been reverted to RuntimeVariables.  If you renamed it after downloading 1.32 or 1.33, please rename it back to Scripts/Variables/RuntimeVariables.cs\
+\
+-Fixed: Crashes for iPhone users in editor\
+-Fixed: Errors with GlobalVariables / RuntimeVariables script renaming\
+\
+\
+Version 1.33:\
+\
+-Fixed: Crashes related to Settings Manager and options data\
+-Added: Camera: Crossfade Action - use to crossfade from one Camera to another\
+-Added: Engine: Check scene now allows both the current and previous scene numbers to be queried\
+-Added: Cursor influence settings for GameCameraAnimated\
+-Added: Ease In and Ease Out options for Camera: Switch and Object: Transform Actions\
+-Added: Ability for GameCameras to use Default PlayerStart as reference for initial position\
+-Added: Ability for Triggers to cancel pending Interactions if activated while walking towards a Hotspot\
+-Added: "Absolute" setting for Menu and Element Size property - use to set sizes to exact pixels, regardless of resolution\
+-Added: "CycleCursors" as an Input axis for "Choose Interaction Then Hotspot" mode\
+-Fixed: Errors when compiling to iPhone (clear Options cache!)\
+-Fixed: Asset-based ActionLists not always displaying "Check"-type Actions correctly\
+-Fixed: Actions deleted in ActionList Editor window sometimes re-appearing when game is tested\
+-Fixed: Errors with using Engine: Run ActionList in Asset-based ActionLists\
+-Fixed: Characters not even moving in a straight line if no default NavMesh is present\
+-Fixed: Menus blocking Hotspot cursor when locked off\
+-Fixed: Changes in Menu states being reset after changing scene (properly, this time!)\
+-Fixed: Using Menu Button clicks to simulate input axis not working continually\
+-Fixed: Interaction buttons no longer working for Choose Interaction Then Hotspot mode\
+\
+\
+Version 1.32:\
+\
+Upgrade notes:\
+-The RuntimeVariables script has been renamed to GlobalVariables\
+\
+-Added: Local Variables - use Variables Manager to define scene-based Variables, compatible with Variable Actions\
+-Added: True "Unity 2D" mode for 2D games - use to work entirely in the Unity 2D view; 2D Demo updated to show workflow\
+-Added: Hotspot2D, Trigger2D, CollisionCube2D, NavMesh2D prefabs for Unity 2D-based games\
+-Added: Polygon Collider pathfinding for "Unity 2D" games - construct a navigation "mesh" directly in the Editor\
+-Added: Crafting system - combine multiple inventory items together make new ones\
+-Added: Crafting to Inventory Manager - use to declare complex inventory combinations\
+-Added: Crafting menu element - either use to place down ingredients, or display the output\
+-Added: Inventory: Crafting Action - use to clear crafting ingredients or create the appropriate item\
+-Added: Blue borders now appear in Menus when previewing Elements with multiple slots\
+-Added: Ability to set initial quantity of Items that appear in Inventory on start\
+-Added: Static functions for setting/getting variables\
+-Added: "Turn before walking" option to Characters - found in Character Inspector's Movement settings\
+-Added: Characters no longer need Rigidbodys or Colliders if collision, gravity or Triggers aren't involved - useful for mobile\
+-Added: Keyboard pop-up when using Input boxes on iOS and Android devices\
+-Added: Variable: Check Action now supports comparison between Variables\
+-Added: Setting a string with the Variable: Set Action now supports replacement tokens\
+-Added: Ability to link Enter key presses on an Input element to a Button element on the same Menu\
+-Added: On and Off textures to Toggle menu elements\
+-Fixed: Active Inventory item sometimes being incorrectly being de-selected\
+-Fixed: Conversations ending prematurely if an unrelated ActionList ends as well\
+-Fixed: Menus sometimes "flickering" before appearing for the first time\
+-Fixed: Save game and scene-switching issues with Player-less games\
+-Fixed: Changes in Menu states being reset after changing scene\
+-Fixed: Hotspot labels not appearing over Container items\
+-Fixed: Menus sometimes resizing inappropriately when adding new Elements\
+-Fixed: 2D GameCameras not working with Orthographic perspective\
+-Fixed: Character: Animate action's "Add directional suffix?" not working for Mecanim\
+-Fixed: Issues with building to Windows Phone 8\
+-Fixed: Active cursor effects playing if hovering an Inventory item of a Hotspot with a valid but disabled Interaction\
+-Fixed: Display issues with Input box Menu elements\
+-Fixed: Sound effects continuing to play after a saved game in the same scene was loaded\
+-Fixed: Player being able to "double-click to run" even when "Always Walk" was set in Player: Constrain Action\
+-Fixed: ActionList resetting if Actions were pasted into it and no further changes were made\
+-Fixed: Text appearing beneath Button background textures\
+-Fixed: Speech being skipped if the mouse button was held down continuously from activating the ActionList\
+-Fixed: Player not always re-appearing after game was restarted\
+\
+\
+Version 1.31:\
+\
+Upgrade notes:\
+-Options data may need to be cleared before scenes can be run - please click "Reset options data" in the Settings Manager\
+\
+-Added: Ability to link Variables to Options: this causes a Variable's value to be stored in PlayerPrefs, not saved game files\
+-Added: Ability to link Variables to Cycle, Toggle and Slider Menu Elements\
+-Added: Ability to manually define string array in Cycle Menu Element\
+-Added: "Drag and drop" mode for Inventory Items - set in Settings Manger under "Inventory settings"\
+-Added: A Player prefab is now no longer required for AC scenes to run\
+-Added: New Movement method: None - useful for "storybook" games or those without a Player character\
+-Added: Ability to display an icon/texture at the centre of a Hotspot, set in Settings Manager\
+-Added: "Auto-create" buttons to remaining "Scene settings" fields in Scene Manager\
+-Added: New Game Wizard now creates a Manager Package asset, to bulk-assign Managers in one go\
+-Added: Initial Variable values are shown in Variables Manager list\
+-Added: Option to set TextMesh labels automatically when using MenuLink script to link to Menu Elements\
+-Added: "Pause until finish" with Camera: Switch now waits for an Animated GameCamera to complete its animation\
+-Fixed: Object: Transform Action not performing absolute transformations when skipped\
+-Fixed: ActionLists not looping properly\
+-Fixed: Formulas with Variable tokens only working correctly for the first time\
+-Fixed: Menu Labels of type "Dialogue Portrait" not displaying background texture in-game\
+-Fixed: Player sprites sometimes having the incorrect sorting order after changing scenes\
+\
+\
+Version 1.30a:\
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ql\qnatural\pardirnatural
+\cf0 -Fixed: Issues related to using Character: Animate Action on Mecanim-based Characters\
+\
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+Version 1.30: \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ql\qnatural\pardirnatural
+\cf0 Upgrade notes:\
+-The ability to lock saving games has been moved from the Player: Constrain Action to Engine: Manage systems Action\
+-Object: Animate actions - If you use any for BlendShapes on Mecanim objects, they will need to be rebuilt\
+-Custom Actions that are not instantaneous must have a new function "Skip" that performs the final result of the Action\
+-Skipping cutscenes: Non-Legacy animations are liable to continue playing once a Cutscene has ended - to combat this, end your Cutscene with an appropriate Idle or reset animation\
+\
+-Added: ActionLists are now skippable with the "EndCutscene" input (see Upgrade notes above)\
+-Added: Categorised Actions - designed to cope better with increasing number of available Action types\
+-Added: "Engine: Manage systems" Action - use to disable individual systems, such as Movement and Interaction\
+-Added: Container prefab - store Inventory items in the scene, to be retrieved by the Player\
+-Added: Container: Add or remove, Container: Check and Container: Open Actions\
+-Added: New Menu "appear type" and Inventory Box types for handling Containers\
+-Added: "Container" Menu to both Demo Menu Managers\
+-Added: "Slot spacing" field for Menu Elements with multiple slots, eg. Inventory lists\
+-Added: GameCameraAnimated - Can play an animation, or sync frame based on a Target's position on a Path\
+-Added: "Camera: Split screen" Action - use to display two cameras at once, horizontally or vertically\
+-Added: Option to vary GameCamera's Field Of View with it's target's distance from camera\
+-Added: When using New Game Wizard, Demo Cursor and Menu Managers are copied and renamed, rather than referenced\
+-Added: "Character: Switch portrait" Action - courtesy of Guran!\
+-Added: Ability to sync a Variable's value with that of a PlayMaker GlobalVariable (PlayMaker required)\
+-Added: Float variables\
+-Added: Option to type in a formula in Variable: Set Action - also supports tokens e.g. "[var:2]" to use the value of Variable 2\
+-Added: Options in Third Person Camera to reset spin and rotation when switching back to it\
+-Added: For Point-And-Click or Drag games, Player: Constrain Action consolidates all four movement locks into one\
+-Added: Option for multiple Player characters to share the same Inventory\
+-Added: GetVariable function to RuntimeVariables.cs, to more easily access a Variable through script\
+-Added: Warning messages if a Remember script is attached to a GameObject without the component it expects\
+-Added: Ability to force the playing of an animation with Animate actions on Mecanim objects and Characters\
+-Added: Various usability improvements to Input text boxes, including "click to select", text cursor and case differentiation\
+-Added: Ability to set "use" icon for Inventory Items if cursor is set to change when over them in Context Sensitive-mode\
+-Added: Separate "unhandled" ActionList field for Inventory combine interactions\
+-Added: Unified GUI between Menu, Inventory and Variables Managers\
+-Added: Ability to select Menu Elements for editing by clicking on them in Preview mode\
+-Added: "Default Camera" to Scene Manager - references Default PlayerStart's "Camera on start" field when set\
+-Added: "Auto-create" buttons to Scene cutscene fields in Scene Manager\
+-Added: Speech lines without a Character are considered Narration lines, and can have translations and audio\
+-Added: Ability to limit Menus of "Appear Type: When Speech Plays" to Character lines or Narration lines\
+-Added: "Maximum distance" field to "Character: NPC follow" Action - NPCs will run to target if distance between is too large\
+-Moved: Ability to lock saving games from Player: Constrain Action to Engine: Manage systems Action\
+-Fixed: Various issues related to inventory selection in Choose Interaction Then Hotspot mode\
+-Fixed: Errors with timed Conversations that include Options that return to the Conversation\
+-Fixed: GameCameras disabling themselves even when the MainCamera prefab is not present in the scene\
+-Fixed: Sending Kill message to an ActionList not removing it from the ActionList Manager\
+-Fixed: Menus with no Transition type set not appearing instantly in the correct position\
+-Fixed: GameEngine's system-side ActionList being viewable with ActionList Editor window\
+-Fixed: Autosaving being cancelled if a Cutscene was not the last blocking Cutscene to run\
+-Fixed: CollisionCubes not blocking "Point and Click" RayCasts when placed on the Default layer\
+-Fixed: "Change for inventory?" setting in Cursor Manager not affecting cursor when hovering over Inventory items\
+-Fixed: Various issues for Input text boxes, including not being able to use in pausing Menus\
+-Fixed: ActionLists not displaying until Actions Manager was viewed when created with New Game Wizard\
+-Fixed: Paths Inspector showing controls when attached to a Player or NPC\
+-Fixed: Menu previewing not updating instantly when changing Window size or deleting Menu Elements\
+-Fixed: Using the Engine: Play sound Action to play music causing the music to restart if the clip was already playing\
+-Fixed: Drag and First Person modes no longer working for Touch Screen devices\
+-Fixed: Asset-based ActionLists called with "Engine: Run ActionList" Action not being processed by Speech Manager\
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\
+Version 1.29:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ql\qnatural\pardirnatural
+\cf0 -Added: Node-based ActionList Editor window - Actions can be re-arranged and connected via sockets\
+-Added: Widescreen support - set your game's aspect ratio in the Settings Manager\
+-Added: "Engine: Change scene setting" Action - replaces "Engine: Change NavMesh", use to change default settings\
+-Added: New animation engine: Unity Sprites Complex - provides complete control over sprite-based Mecanim FSMs\
+-Added: Option to retain a GameObject's ConstantID number when used as a prefab\
+-Added: Option to manually set a GameObject's ConstantID number\
+-Added: Music can now play across scenes - follow instructions in the Inspector for Sound objects\
+-Added: New animation engine: Unity Sprites Complex - provides complete control over sprite-based Mecanim FSMs\
+-Added: Ability to treat carriage returns in Play speech Action as separate speech lines - enable in the Speech Manager\
+-Added: Ability to "click to complete" scrolling speech text before manually skipping it - find in the Speech Manager\
+-Added: Ability to set per-Character speech text colour - enable in the Dialogue Line label Inspector\
+-Added: Ability to disable automatic height-adjustment for Dialogue Line labels set to Manual size\
+-Added: Ability to cancel Interaction menus by clicking off them for Choose Hotspot Then Interaction mode\
+-Added: Field for optional "Walk" cursor in Cursor Manager\
+-Added: Saved game "Time display" setting to Settings Manager - use to display date, date and time, or neither in save lists\
+-Added: Ability to filter declared Inventory Items by name\
+-Added: Option for FollowSortingMap script to affect child renderers\
+-Added: Ability to set a separate directory for custom Actions within Actions Manager\
+-Added: Ability to define "Unhandled" interactions for individual Inventory Items\
+-Added: Ability to disable need to double-tap to interact with Hotspots when using Touch Screen input\
+-Added: Ability to save and load visibility data of child GameObjects with Remember Visibility component\
+-Added: Option to disable active Inventory cursor with a left-click - find in Settings Manager\
+-Fixed: Actions can now "skip" to ones that precede them in the ActionList\
+-Fixed: Changing an Action's type losing it's "After running" settings\
+-Fixed: 3D Players with "Tank controls" will animate backwards when moving back (in Mecanim, Move float is reversed)\
+-Fixed: Touch-screen devices taking the average position when multiple taps are detected\
+-Fixed Player still moving after changing scene due to a Trigger\
+-Fixed: Problems with playing lengthy Character walk and run footstep sounds\
+-Fixed: Action running a new Cutscene after finishing, if it was set to "Run cutscene" but then changed to something else\
+-Fixed: Player not moving if clicking on a Hotspot while in Choose Interaction Then Hotspot's "walk" mode\
+-Fixed: Sprite-based Characters frame-flipping even if setting is not currently available\
+-Fixed: Automatically-set ConstantID numbers being negative\
+-Fixed: Interaction menus not always appearing in correct position\
+\
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+Version 1.28a:\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ql\qnatural\pardirnatural
+\cf0 -Added: Option to only respond to double-clicks when moving in Point and Click mode\
+-Fixed: Compiler errors introduced by new Speech Manager features\
+\
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+Version 1.28:\
+\
+Upgrade notes: Conversations - Replaced "Return to conversation?" checkbox with "When finished" popup - please update your conversations\
+\
+-Added: Dedicated forum! www.adventurecreator.org/forum\
+-Added: Conversation Editor - open from Conversation Inspector, use to more easily map-out dialogue option connections\
+-Added: Ability to set the next Conversation to run after a Dialogue Option directly in the Conversation Inspector\
+-Added: New dedicated toolbar menu - also contains links to online resources, and buttons to quickly load demos\
+-Added: Copy and Paste buttons for Menus\
+-Added: Mouse-locking option now works for Drag, First Person and Direct movement modes - use ToggleCursor input axis\
+-Added: First Person games now begin in free-aim mode, not Hotspot-select mode\
+-Added: Warning message to Scene Manager if no Settings Manager is present\
+-Added: Ability to collapse gathered lines in Speech Manager by category\
+-Added: Option to reset all line IDs in Speech Manager\
+-Added: "Create script sheet" feature in Speech Manager now presents a save-file dialogue before exporting\
+-Added: Option in Cursor Manager to change cursor to an icon when hovering over inventory items (Context-Sensitive mode only)\
+-Added: Ability to choose having single or multiple Inventory Interactions for ChooseInteractionThenHotspot mode\
+-Added: Ability to set fixed angle when a Third Person GameCamera's pitch is locked\
+-Added: Third Person GameCamera can now be used in scenes without a GameEngine prefab\
+-Fixed: Menu Elements with relative positions being reset when the game begins\
+-Fixed: Display issues with Inventory items when shifting through an InventoryBox menu element\
+-Fixed: Deselecting an Inventory item over a Hotspot also triggering the Hotspot's Examine interaction\
+-Fixed: Cursor icon not being reset when Conversations or pausing Menus begin in Choose Interaction Then Hotspot mode\
+-Fixed: Not being able to delete a variable if it was the only one defined\
+-Fixed: "Move speed float" for Mecanim-based Characters now follows same acceleration/deceleration rules as movement\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ql\qnatural\pardirnatural
+\cf0 -Fixed: Action labels in ActionListEditor window obscuring Action number if too long (properly this time!)\
+\pard\pardeftab720\ql\qnatural
+\cf0 -Fixed: Click marker not being instantly removed if a new one was instantiated\
+-Fixed: Characters having their pitch affected when moving along Paths with "Override gravity" checked\
+-Fixed: Errors with keyboard-controlled Menus during Conversations\
+\
+\
+Version 1.27:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ql\qnatural\pardirnatural
+\cf0 \
+\pard\pardeftab720\ql\qnatural
+\cf0 -Added: New Game Wizard - use to quickly create new Managers and define the main settings\
+-Added: Player: Switch - use to change Player mid-game (requires Player Switching to be Allowed in Settings Manager)\
+-Added: Player: Check Action - use to determine which Player prefab is currently being controlled\
+-Added: MenuLink script - use to link Menu Elements to scene objects, to create 3D menus\
+-Added: New Menu Element position type: Relative To Menu Size - use to set position as a percentage of the menu's size\
+-Added: Interaction menus with appear type set to OnHotspot now display correct icons in Context Sensitive mode\
+-Added: Icon-based Dialogue options now send their labels to the Hotspot cursor label\
+-Added: Pointing and clicking is now disabled if all four Player directional locks are enabled\
+-Added: "Affected by gravity?" option to Player: Constrain Action\
+-Added: "Left-click to examine when no use interaction exists" option to Cursor Manager for Context Sensitive mode\
+-Added: Inventory setting "Active when unhandled" to Settings Manager - displays effects when Hotspot interactions don't match\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ql\qnatural\pardirnatural
+\cf0 -Added: Ability to change Character footstep sounds - find within Character: Animate action under Set Standard method\
+\pard\pardeftab720\ql\qnatural
+\cf0 -Added: Hover and Click sounds to clickable Menu Elements - define a Default Sound Prefab in the Scene Manager\
+-Added: Wait cursor to Cursor Manager\
+-Added: Label (if not name) field for Inventory Items\
+-Added: "Hide cursor when locked?" option to First Person games - removes cursor when cursor movement is disabled\
+-Fixed: Issue with using Character: Animate Action to change Mecanim parameter values\
+-Fixed: MainCamera's clear flags being forced when not necessary\
+-Fixed: Namespace conflicts with Unity's Sample Assets (beta) asset\
+-Fixed: Bird always appearing on bench when loading saved game in 2D Demo\
+-Fixed: Null reference error if a FollowSortingMap component can't find a Sorting Map to follow\
+-Fixed: Inventory: Check Action sometimes breaking if the referenced inventory item was deleted\
+-Fixed: Mismatch between speech volume in Options and that on Character Audio Sources\
+-Fixed: Camera: Fade action not working for instant transitions\
+-Fixed: Errors with reloading saved global variables data\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ql\qnatural\pardirnatural
+\cf0 \
+Version 1.26:\
+\
+-Added: Option to cycle multiple Hotspots in Direct-control games when Hotspot detection method is set to Player Vicinity\
+-Added: Selected inventory items in a menu will display their active texture if one is assigned\
+-Added: Inventory box type "Display Selected" - use to show currently selected inventory item, is not clickable\
+-Added: Inventory box type: "Display last selected" - use to quickly select last-chosen inventory item, is clickable\
+-Added: Ability to select/combine inventory items in pausing menus - useful for keyboard or controller-only games\
+-Added: Menus of appear type On Interaction have option to pause game when enabled\
+-Fixed: Inventory interactions not resulting in correct gameplay state\
+-Fixed: Issue where 3D Mecanim-based characters were no longer animating\
+-Fixed: Issues with keyboard-controlled menus\
+-Fixed: Namespace issues with ActionInteraction script\
+\
+\
+Version 1.25:\
+\
+-Added: 3D Characters now work in Top Down 2D mode - attach the Animation/Animator as a child of the GameObject\
+-Added: Character: Change rendering Action - use to lock a Character's sorting order, scale and sprite direction\
+-Added: Ability for Asset-based Actions to reference GameObjects by ConstantID number\
+-Added: Ability for Asset-based Actions to work with Characters, provided Characters have a ConstantID number\
+-Added: "Active cursor effect" option for Inventory cursor - use to replace inventory icon with an "active" one over Hotspots\
+-Added "Pause until finish" option for Engine: Run ActionList\
+-Added: "Auto-play lone option" setting to Conversations\
+-Added: Assigned value to Variable: Set Action label\
+-Added: Menu Transition type - "None"\
+-Added: TurnOnAC and TurnOffAC functions to Kickstarter as well - find in GameEngine prefab\
+-Fixed: Certain Action labels not updating until expanded\
+-Fixed: Variable data now visible during gameplay in RuntimeVariables Inspector\
+-Fixed: Bird's Hotspot being active when inappropriate in 2D Demo\
+-Fixed: Being able to skip speech if it's been displayed for less than half a second\
+-Fixed: Being able to make the lunch fall multiple times in the 2D Demo\
+-Fixed: Character issues with restarting scene using Engine: End game Action\
+\
+\
+Version 1.24:\
+\
+-Added: Turn float parameter to Mecanim-based Characters - outputs -1 and +1 when turning left and right respectively\
+-Added: Deceleration property to Character Movement settings - set to zero to use acceleration instead\
+-Added: New Menu transition option: Zoom\
+-Added: Ability to influence GameCamera's Y-position with target\
+-Added: RememberCollider script - use to save "enabled" state of Colliders\
+-Fixed: Saved camera data not being returned when loading a game in a different scene\
+-Fixed: GameCamera2D not following targets correctly\
+-Fixed: Player not obeying rules of the new SortingMap after changing scene\
+-Fixed: Interaction issues with Menus of Appear type On Input Key\
+-Fixed: Dialogue: Play speech Action now uses a TextArea for the "Line text" box\
+-Fixed: Missing "Required inputs" in Settings Manager when making a First Person game\
+-Fixed: Action labels in ActionListEditor window obscuring Action number if too long\
+-Fixed: Jerky movement from Player if moving to a Hotspot Marker that he's already standing over\
+-Fixed: Right-clicking on inventory items not deselecting current item if one was selected\
+-Fixed: Incorrect inventory items being selected when inventory menu is offset\
+-Fixed: Issues with copy/pasting Asset-based ActionLists \
+-Fixed: Error using GameCamer2.5D's "Set as active" button when game is not running\
+\
+\
+Version 1.23:\
+\
+-Added: New 2D "Moving and turning" mode: Top Down - use to work entirely in 2D, including NavMeshes\
+-Added: Support for Mecanim animation engine - define parameters for movement, and change parameter values with Actions\
+-Added: "Vertical reduction factor" when using Top-Down mode: use to make a Character move more slowly vertically than horizontally\
+-Added: Ability to use a SortingMap to adjust a Character's speed and scale\
+-Added: Variable: Set Action can set bool and integer Variables as Mecanim parameters\
+-Added: Engine: Run ActionList Action - use to start any ActionList from any Action, in parallel with another\
+-Added: ActionListManager script to GameEngine - keeps track of active ActionLists, and can be used for debugging purposed\
+-Added: File browsers when importing and exporting translation files\
+-Added: Characters' standard Legacy AnimationClips (Idle, Walk, etc.) are now saved automatically if the clips are in a Resources folder\
+-Added: Characters' pathfinding data is now stored in saved game files\
+-Added: RememberTransform can now store an object's parent, if it has a ConstantID or is the Hand bone of a Character\
+-Added: Filter box to Variables Manager - use to filter Variables list by name\
+-Added: Option to Speech Manager to allow skipping of background speech lines\
+-Added: TurnOnAC and TurnOffAC functions to Player script - use to easily disable and enable all of Adventure Creator's systems\
+-Fixed: Stability issues when multiple ActionLists run at once\
+-Fixed: Namespace issues with ActionInteraction, Player and NPC scripts\
+-Fixed: Player's SortingMap not resetting on scene change\
+-Fixed: RememberName script not actually recording object names\
+-Fixed: First-person head-bobbing when turning, not moving with Touch-Screen controls\
+-Fixed: Character: Move along path Action accepting a Paths component attached to a Character\
+-Fixed: Not being able to mouse-over Hotspots when using Point And Click or Drag movement in conjunction with Player Vicinity Hotspot Detection\
+-Fixed: Variable: Set and Variable: Check Actions giving errors if the selected Variable was deleted\
+\
+\
+Version 1.22:\
+\
+-Added: Third Person Camera: Find in Scene Manager when Camera Perspective is set to 3D\
+-Added: Hotspot: Change interaction Action - use to enable and disable individual Interactions on a Hotspot\
+-Added: Character: NPC follow Action - use to make an NPC follow either the Player or another NPC\
+-Added: Object: Send message Action can now be used by InvActionLists and MenuActionLists to affect scene objects\
+-Added: Panning transition option for Menus - used by the 2D Demo's Pause Menu\
+-Added: String variables to Variables Manager - modify and query using Variable: Set and Variable: Check Actions\
+-Added: Ability to display Variable values in Dialogue: Play speech Action using [var:ID] token - find a Variable's ID in the Variables Manager\
+-Added: Ability to set a String variable as the Label text of a MenuInput element using the Variable: Set Action\
+-Added: Option for Character Rigidbodys to ignore gravity - now used by 2D Demo\
+-Added: Option for Character Rigidbodys to freeze position when Idle - useful for Characters on slopes\
+-Added: Option for Touch Screen input to only affect rotation, not movement when in First Person\
+-Added: "On exit" type to Triggers\
+-Added: Highlight script now affects attached GUITextures, too\
+-Added: Better UI for Variables Manager\
+-Added: Option to set an arbitrary input value for MenuButtons with a Click Type of Simulate Input - use to make on-screen joysticks\
+-Fixed: Discrepancy in GameCamera start position if its target teleports as soon as the scene begins\
+-Fixed: Point And Click movement no longer working when Touch Screen input is used\
+-Fixed: Hotspot labels turning off instantly instead of transitioning out\
+-Fixed: Large memory leaks related to NavigationEngine\
+-Fixed: Being able to zoom First Person Camera outside of gameplay\
+-Fixed: Camera fading in on start even when PlayerStart's "Fade In On Start" checkbox was unchecked\
+-Fixed: Player not responding to Character: Move Action if called immediately when scene begins\
+-Fixed: Cursor briefly visible when 2D Demo restarts\
+-Fixed: OnLoad being called when the Engine: End game Action resets the scene\
+-Fixed: Removed attempt to detect stuck Paths - too many false positives\
+-Fixed: Removed missing script from WormMarker in 2D Demo's Park scene\
+-Fixed: Conflicting namespace issues with Button class\
+\
+\
+Version 1.21:\
+\
+UPGRADING NOTES:\
+-Each Character now requires an individual Animation Method and Talk Animation Style\
+-Any Character: Animate Actions that involve Set Standard must be re-defined (2D characters only)\
+-Hotspots and NPCs that are disabled by default should be disabled via the RememberHotspot and RememberNPC scripts\
+\
+-Added: New 2D Demo - demonstrates basic workflow for 2D adventure games\
+-Added: ActionListEditor window - open from any Cutscene/Interaction etc Inspector\
+-Added: When setting an Action to skip to, selected Action is now remembered when re-arranged\
+-Added: For 2D games, option to rely on screen-space co-ordinates for Character moving and turning\
+-Added: Animation Engine is now a per-Character setting - please update your Characters!\
+-Added: Third-Party: PlayMaker Action - use to call PlayMaker FSM events\
+-Added: Now easier to create custom animation engines - just add to the enum and create a script file\
+-Added: Save/Load functionality for Webplayer-based games\
+-Added: SortingMap - use to automate sorting order of character sprites, find in Scene Manager\
+-Added: ManagerPackage asset - use to quickly assign a set of managers to game\
+-Added: Ability to character walk/run speeds using Character: Animate Action's Set Standard method\
+-Added: Reset Scene and Restart Game options to Engine: End game Action\
+-Added: Better GUI for Inventory Manager\
+-Added: Better GUI for Conversation inspector\
+-Added: Exposed Layers used in Raycasting in SettingsManager\
+-Added: For ChooseHotspotThenInteraction, allow texture for highlight cursor\
+-Added: Option for Unity 2D-based characters to be uni-directional\
+-Added: Warning message to Actions Manager if trying to search for Actions in Web Player build\
+-Added: For "Choose Hotspot Then Interaction" mode, option to act like "Context Sensitive" for Hotspots with a single Interaction\
+-Added: For "Choose Hotspot Then Interaction" mode, option to act like "Context Sensitive" for Inventory items\
+-Added: Option for per-character talk animation style - standard clip or per-speech line custom animation\
+-Added: RememberVisibility script - use to save "enabled" state of scene renderers\
+-Added: "Start state" property to RememberHotspot, RememberNPC and RememberVisibility scripts\
+-Added: Icon-based conversations\
+-Added: "Enabled on start" property to Menus with Appear Type set to Manual\
+-Added: ParticleSwitch script now triggers Particle Systems once when sent the "Interact" message\
+-Added: Ability to re-order Inventory Items\
+-Added: Ability to re-order Global Variables\
+-Added: "Cutscene on Variable Change" to scene manager - runs whenever gameplay is restored after a variable is changed\
+-Added: Ability to wait until for custom animatons before returning Unity2D Characters to idle in Character: Animate Action\
+-Fixed: Error messages when PlayMaker is also present in Assets folder\
+-Fixed: Sprite-based characters now turn linearly when still, and instantly when moving\
+-Fixed: "Delete Marked" rebuilding new Actions\
+-Fixed: "Character: Move to point" Action ignoring path speed\
+-Fixed: Errors with Unity Navigation-based pathfinding\
+-Fixed: "Bumping" effect if play game with GameCamera2D is active in Inspector\
+-Fixed: Transitioning between two GameCamera2Ds not affecting field-of-view\
+-Fixed: Menus of position type AboveSpeakingCharacter ignoring Character's scale\
+-Fixed: Character sprite renderers no longer restricted to a unit scale\
+-Fixed: Inventory prefixes not always appearing for ChooseHotspotThenInteraction mode\
+-Fixed: Path handles no longer display when game is running\
+-Fixed: If DialogOption has no label, show some default text in Toggle Option action\
+-Fixed: Cursor label issues with Inventory Items and Interaction Menus\
+-Fixed: Game breaking if no Interaction was assigned to a Conversation's Dialogue Option\
+-Fixed: New Inventory Items no longer have a blank Combine Interaction when created\
+-Fixed: Highlight textures now appear underneath Menu Buttons\
+-Fixed: "Cancel interactions with" setting showing in Settings Manager when unnecessary\
+-Fixed: Removed constant in-game error messages when inventory items have no texture\
+-Fixed: Variable: Check and Variable: Set Actions not showing selected variable in title label\
+-Fixed: Inventory: Add or remove Action not always showing selected item in title label when collapsed\
+-Fixed: Various issues relating to adding Inventory items with "Can carry multiple" checked\
+-Fixed: Object: Animate Action not showing animation info in title label\
+-Fixed: Inventory menus not updating when inventory changes until the menu is turned off and on again\
+-Fixed: Character: Animate Action slightly overshooting custom 2D animations when set to wait\
+-Fixed: Actions pasted multiple times always sharing the same values\
+-Fixed: Subtitle labels not resizing when set to Automatic size\
+-Fixed: Moveable objects not stopping upon saved game load\
+\
+\
+Version 1.20:\
+\
+-Added: "Run in Background" option for Cutscenes, Interactions and Triggers\
+-Added: Ability to categorise Inventory items, and filter them in InventoryBox Menus\
+-Added: When Interaction method is ChooseHotspotThenInteraction, inventory items behave like Hotspots\
+-Added: Ability to "click off" Interaction Menus to turn them off, rather than mouse-away\
+-Added: New Menu Button click type: Simulate Input - use to call ButtonDown inputs via a menu\
+-Added: "LimitVisibility.cs" script - limits visibility of GameObject's mesh/sprite to a chosen camera\
+-Added: "Parallax2D.cs" script - scroll background/foreground elements according to a 2D GameCamera's projection\
+-Added: Display of required input axes based on Interface settings inside the Settings Manager\
+-Added: NavigationManager and subclasses - to make a new navigation method, just add to the enum and create a subclass\
+-Added: Option to display just Use icon, rather than both Use and Examine, when both interactions are available for a Hotspot\
+-Added: "NavMesh search" property to Settings Manager - use to affect how high above a NavMesh a cursor can click to find it\
+-Added: New Menu position type: AboveSpeakingCharacter - use for "classic" 2D game subtitles\
+-Added: "AC" namespace - used for Action and Char classes\
+-Added: Ability to move Actions to top and bottom of lists\
+-Added: Ability to cut, copy and paste individual Actions\
+-Added: Ability to mass mark Actions for copying and deleting\
+-Added: Ability to enable and disable individual Actions\
+-Added: Ability to rearrange display order of Menus in Menu Manager\
+-Added: Ability to not scroll subtitle text - found in Speech settings\
+-Added: Ability to display screen-wide background texture when game is paused - find in Menu Manager\
+-Added: Error message if Text Scroll Speed is set to zero\
+-Added: Configurable Options data to Settings Manager\
+-Moved: Action re-arrange buttons to a Context Menu (accessed via each Action's top-right icon)\
+-Moved: Speech settings from Settings Manager to Speech Manager\
+-Fixed: "Twitching effect" when moving with Unity Navigation pathfinding method\
+-Fixed: 2D GameCameras can now be offset when locked\
+-Fixed: InventoryBox Menu elements now preview actual Inventory items when game is not running\
+-Fixed: "Prefix cursor labels" now works for all Interaction methods\
+-Fixed: Non-pause Menus with an appear type Manual not always responding to left-clicks\
+-Fixed: Loading game while Player is in a continuous Trigger causing a camera error\
+-Fixed: FlashHotspots making Highlight objects brightening smoothly but dimming instantly\
+-Fixed: Offset issues with GameCamera2D\
+-Fixed: Hardware Cursor now hides when Interaction Icons are showing\
+-Fixed: Lack of error messages when starting a game without either a Cursor or Menu Manager\
+-Fixed: Inventory items carried on start not always appearing in Interaction menus\
+-Fixed: Cursor disappearing after clicking on Inventory icon in ChooseHotspotThenInteraction mode\
+-Fixed: Menus of Appear type OnInteraction disappearing prematurely if not positioned underneath cursor\
+-Fixed: Error when running ActionList that hasn't been "seen" by Inspector\
+-Fixed: Occasional incorrect Interaction when using Inventory Items on Hotspots in Choose Hotspot Then Interaction mode\
+-Fixed: Deleted InvActions and MenuActions not being removed from Asset files\
+\
+\
+Version 1.19:\
+\
+-Added: Menu Journal element - create pages and add to them in-game\
+-Added: New Movement Method - Drag\
+-Added: Option to detect hotspots from the player's vicinity, not the mouse cursor\
+-Added: Ability for keyboard to navigate pause menus when input method set to "Keyboard Or Controller"\
+-Added: New Menu position type: OnHotspot\
+-Added: Cursor display options - Always, Only When Paused, Never\
+-Added: Ability to swipe directional arrow prompts when using Touch Screen input\
+-Added: Ability to lock/unlock individual menus via the Menu: Change State Action\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\ql\qnatural\pardirnatural
+\cf0 -Added: Ability to display variables value in Labels\
+-Added: Option to make player face Hotspot / Walk-to Marker after walking to a Hotspot\
+-Added: Option to include character direction when playing custom 2D animations\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\ql\qnatural\pardirnatural
+\cf0 -Added: Warning to CSV export if speech lines contain the CSV pipe delimiter\
+-Fixed: Menu Element visibility is now stored in saved games\
+-Fixed: InventoryBox offset's not resetting on game load\
+-Fixed: Not always being able to move when "Replace Cursor" was unchecked\
+-Fixed: MenuInteraction not showing the correct Hotspot icon when using a Context Sensitive interface\
+-Fixed: Unhandled interactions sometimes triggering Inventory unhandled events\
+-Renamed: Various Settings Manager fields for streamlining\
+-Renamed: "Controller" input method to "Keyboard Or Controller"\
+-Renamed: Controller input axes\
+\
+\
+Version 1.18:\
+\
+-Added: Ability to offset GameCamera's LookAt target in X and Z directions\
+-Added: MenuInput element - accepts text input when active\
+-Added: Syntax options for hotspot label when inventory is selected\
+-Added: Ability to import/export translations as CSV files\
+-Added: Ability to translate hotspots, dialogue options, cursors, inventory items and menus\
+-Added: Click Marker - shows player's intended destination when point-and-clicking\
+-Fixed: "Make default" button not always displaying in Conversation inspector\
+\
+\
+Version 1.17:\
+\
+-Added: Support for Unity's built-in 2D animation engine\
+-Added: Grid orientation option for menu element slots\
+-Added: Ability to cancel an Interaction before the player reaches a Hotspot\
+-Added: Ability to run to Hotspots by clicking twice\
+-Added: BlendShape support to Object: Animate Action\
+-Added: Hyperlinks to manual\
+-Added: "Destination accuracy" field to Settings Manager\
+-Fixed: Hotspot interactions not pathfinding correctly when relying on Unity Navigation\
+-Fixed: MouseOver menus not displaying correctly in WebPlayer\
+-Fixed: Character footsteps not always synching with Options-based audio levels\
+-Fixed: Renamed PathType enum to AC_PathType to avoid conflict with Hotween\
+\
+\
+Version 1.16:\
+\
+-Added: Menu Manager - use to define menu display and functions\
+-Added: Cursor Manager - use to define custom interaction icons\
+-Added: Choice of interaction methods, for menu-based interactions\
+-Added: MenuActionLists - attach to Menu elements to define OnClick events\
+-Added: Option to prefix hotspot labels with icon labels\
+-Added: Option for user-defined input key for menus with OnButton appear type\
+-Added: Label "type" settings, replaces token system\
+-Added: Option for MenuDialogList elements to only display a single, fixed slot\
+-Added: MenuInteraction, an element to display cursors as buttons\
+-Added "Menu: Change state" Action\
+-Added "Engine: End game" Action\
+-Added: Frame-flipping options for characters' standard 2D animations\
+-Added: First-person head bobbing\
+-Added: Footstep sounds\
+-Added: Ability to flash hotspots with FlashHotspots input key\
+-Added: Ability to zoom First Person Camera with mouse wheel\
+-Added: Ability to scroll through inventory bar\
+-Fixed: Inventory ActionLists are now created in proper directory\
+-Fixed: Replaced Camera: Switch Action's transition time GUI from a slider to a float field\
+\
+\
+Version 1.15:\
+\
+-Added: Per-scene option to use Unity Navigation for pathfinding\
+-Added: NavMeshSegment prefab, used to mark out NavMesh boundary\
+-Added: Save support for iOS via XML serialization\
+-Fixed: 1st-person head tilt sometimes not working for Character: Face object Action\
+-Fixed: First Person Camera clipping planes not respected on game start\
+\
+\
+Version 1.14:\
+\
+- Added: Option in Settings Manager for model- or sprite-based characters\
+- Added: Option in Settings Manager for project's camera perspective\
+- Added: GameCamera2D, which allows for "Ken Burns effect"-like panning, for use in 2D games\
+- Added: GameCamera25D, which displays a background image, for use in 2.5D games\
+- Added: "Tank Controls" option for Direct control when using Mouse and Keyboard or Controller input types\
+- Added: Support for Orthographic GameCameras\
+- Added: SideScrolling movement option for GameCameras\
+- Added: Camera: Shake Action for earthquake/rumble effects\
+- Added: Randomisation option for Variable: Set Action\
+- Added: NavMesh visibility option to Scene Manager\
+- Added: ParticleSwitch script to turn particle systems on and off using the Object: Send Message Action\
+- Added: Custom "Save filename" field in Settings Manager\
+- Added: Custom inspectors for character scripts\
+- Added: Left-clicks can now be used for examine interactions if no use interaction is set\
+- Added: Ability for character portraits to display when characters talk\
+- Added: @HOTSPOT@, @SUBS_SPEAKER@, @SUBS_PORTRAIT@, @SUBS_LINE@ tokens for menu labels\
+- Added: Raised the fade time cap to 10s for the Engine: Play Sound Action\
+- Fixed: Complex conversations sometimes displaying incorrect options\
+- Fixed: Cutscenes with delay times can now run themselves\
+- Fixed: Camera: Switch Action not animating cameras if used as the first action on game start\
+- Fixed: If a hotspot has both use and look interactions, cursor icons are displayed side-by-side\
+\pard\tqr\tx1020\tx1040\pardeftab160\li1040\fi-1040\ql\qnatural
+\cf0 \
+\
+Version 1.13:\
+\
+-Added: Touch Screen input, works with iOS and Android platforms\
+-Added: Ability to toggle between cursor and FreeAim for First Person control\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab160\ql\qnatural\pardirnatural
+\cf0 -Added: Arrow Prompts may now be optionally clicked on\
+-Added: Ability to play different speech audio for translations\
+-Added: "Inventory: Select" Action, to aid "drag-and-drop" puzzles\
+-Added: "Raycast settings" to the Settings Manager, to change raycast lengths\
+-Added: "Interface settings" the the Settings Manager, and ability to always show inventory\
+-Added: Saved games now also save the active inventory item\
+-Added: Menu button during gameplay\
+-Fixed: iOS stability\
+-Fixed: Demo bugs involving hotspots being active when they shouldn't be\
+-Fixed: Lock if use a hotspot with no interaction\
+-Fixed: NullReference errors regarding unhandled inventory interactions\
+-Fixed: NullReference error if a character was missing a standard animation\
+\
+\
+\pard\tqr\tx1020\tx1040\pardeftab160\li1040\fi-1040\ql\qnatural
+\cf0 Version 1.12:\
+\
+-Renamed Trigger script and Direction enum to avoid conflict with NGUI\
+-Direct control now works even if no "Run" button is defined\
+-Added "Force subtitles if no audio" option to Settings Manager\
+\
+\
+Version 1.11:\
+\
+-Fixed error with Engine: Change Timescale action.\
+\
+}

@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: c1a4e835e649f294c813816dc9293483
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: BL_Lip
+    100002: BR_Lip
+    100004: Chest
+    100006: //RootNode
+    100008: Female
+    100010: Head
+    100012: L_Arm1
+    100014: L_Elbow1
+    100016: L_F4
+    100018: L_F5
+    100020: L_F6
+    100022: L_pink4
+    100024: L_pink5
+    100026: L_pink6
+    100028: L_Point4
+    100030: L_Point5
+    100032: L_Point6
+    100034: L_ring5
+    100036: L_ring6
+    100038: L_ring7
+    100040: L_Thumb4
+    100042: L_Thumb5
+    100044: L_Thumb6
+    100046: L_wrist1
+    100048: LT_Lip
+    100050: Neck
+    100052: R_Arm1
+    100054: R_Elbow1
+    100056: R_F4
+    100058: R_F5
+    100060: R_F6
+    100062: R_Foot1
+    100064: R_Foot1 1
+    100066: R_Foot2
+    100068: R_Foot2 1
+    100070: R_Foot3
+    100072: R_Foot3 1
+    100074: R_Knee
+    100076: R_Knee 1
+    100078: R_Leg
+    100080: R_pink4
+    100082: R_pink5
+    100084: R_pink6
+    100086: R_Point4
+    100088: R_Point5
+    100090: R_Point6
+    100092: R_Reg
+    100094: R_ring5
+    100096: R_ring6
+    100098: R_ring7
+    100100: R_Thumb4
+    100102: R_Thumb5
+    100104: R_Thumb6
+    100106: R_wrist1
+    100108: Root
+    100110: RT_Lip
+    100112: Waist
+    400000: BL_Lip
+    400002: BR_Lip
+    400004: Chest
+    400006: //RootNode
+    400008: Female
+    400010: Head
+    400012: L_Arm1
+    400014: L_Elbow1
+    400016: L_F4
+    400018: L_F5
+    400020: L_F6
+    400022: L_pink4
+    400024: L_pink5
+    400026: L_pink6
+    400028: L_Point4
+    400030: L_Point5
+    400032: L_Point6
+    400034: L_ring5
+    400036: L_ring6
+    400038: L_ring7
+    400040: L_Thumb4
+    400042: L_Thumb5
+    400044: L_Thumb6
+    400046: L_wrist1
+    400048: LT_Lip
+    400050: Neck
+    400052: R_Arm1
+    400054: R_Elbow1
+    400056: R_F4
+    400058: R_F5
+    400060: R_F6
+    400062: R_Foot1
+    400064: R_Foot1 1
+    400066: R_Foot2
+    400068: R_Foot2 1
+    400070: R_Foot3
+    400072: R_Foot3 1
+    400074: R_Knee
+    400076: R_Knee 1
+    400078: R_Leg
+    400080: R_pink4
+    400082: R_pink5
+    400084: R_pink6
+    400086: R_Point4
+    400088: R_Point5
+    400090: R_Point6
+    400092: R_Reg
+    400094: R_ring5
+    400096: R_ring6
+    400098: R_ring7
+    400100: R_Thumb4
+    400102: R_Thumb5
+    400104: R_Thumb6
+    400106: R_wrist1
+    400108: Root
+    400110: RT_Lip
+    400112: Waist
+    2300000: Female
+    3300000: Female
+    4300000: Female
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Female
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .119999997
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

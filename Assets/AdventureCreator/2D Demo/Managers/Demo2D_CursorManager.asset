@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cd11e06e7fc41a595e0cccca50dae3, type: 3}
+  m_Name: Demo2D_CursorManager
+  m_EditorClassIdentifier: 
+  cursorDisplay: 0
+  allowMainCursor: 1
+  addHotspotPrefix: 1
+  allowInteractionCursor: 1
+  allowInteractionCursorForInventory: 0
+  cycleCursors: 1
+  leftClickExamine: 0
+  normalCursorSize: .0149999997
+  mouseOverCursorSize: .0299999993
+  iconCursorSize: .0399999991
+  inventoryCursorSize: .0599999987
+  waitTexture: {fileID: 0}
+  pointerTexture: {fileID: 2800000, guid: 5c83780962ed843c0928648679746938, type: 3}
+  walkTexture: {fileID: 0}
+  mouseOverTexture: {fileID: 2800000, guid: 7dbb48ec96cf947b5a0b669e001ddbab, type: 3}
+  inventoryHandling: 0
+  hotspotPrefix1:
+    label: Use
+    lineID: -1
+  hotspotPrefix2:
+    label: on
+    lineID: -1
+  cursorIcons:
+  - label: Use
+    texture: {fileID: 2800000, guid: fca3605bfa5c847a19ca115a1c925bd1, type: 3}
+    lineID: -1
+    id: 0
+  - label: Talk to
+    texture: {fileID: 2800000, guid: f03835de3da7f442f92582f0dd5e5863, type: 3}
+    lineID: -1
+    id: 1
+  - label: Look at
+    texture: {fileID: 2800000, guid: e0394f989f329496584e377a81d4031f, type: 3}
+    lineID: -1
+    id: 2
+  - label: ExitLeft
+    texture: {fileID: 2800000, guid: ef118e99a62af4f05ad8c9f331a04f27, type: 3}
+    lineID: -1
+    id: 3
+  - label: ExitRight
+    texture: {fileID: 2800000, guid: 9786f1ddb7b7b43ef8de7dbc95b78bb1, type: 3}
+    lineID: -1
+    id: 4
+  lookUseCursorAction: 0
+  lookCursor_ID: 2
+  lookCursor_int: 2

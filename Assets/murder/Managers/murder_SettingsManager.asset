@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b776810ebfa374d7ba8f0fb5ed6e3265, type: 3}
+  m_Name: murder_SettingsManager
+  m_EditorClassIdentifier: 
+  saveFileName: murder
+  saveTimeDisplay: 0
+  playerSwitching: 1
+  player: {fileID: 11400002, guid: a35321f59eca4c54c905ed0396e1ac97, type: 2}
+  players: []
+  shareInventory: 0
+  movementMethod: 0
+  inputMethod: 0
+  interactionMethod: 0
+  hotspotDetection: 0
+  cancelInteractions: 0
+  hotspotsInVicinity: 0
+  hideLockedCursor: 0
+  inventoryDragDrop: 0
+  inventoryDropLook: 0
+  inventoryInteractions: 1
+  inventoryActiveEffect: 1
+  inventoryDisableLeft: 1
+  inventoryPulseSpeed: 1
+  activeWhenUnhandled: 1
+  clickPrefab: {fileID: 0}
+  directMovementType: 0
+  destinationAccuracy: .899999976
+  walkableClickRange: .5
+  dragAffects: 0
+  verticalReductionFactor: .699999988
+  doubleClickMovement: 0
+  freeAimTouchSpeed: .100000001
+  dragWalkThreshold: 5
+  dragRunThreshold: 20
+  drawDragLine: 0
+  dragLineWidth: 3
+  dragLineColor: {r: 1, g: 1, b: 1, a: 1}
+  doubleTapHotspots: 1
+  forceAspectRatio: 0
+  wantedAspectRatio: 1.5
+  landscapeModeOnly: 1
+  cameraPerspective: 2
+  movingTurning: 2
+  hotspotIconDisplay: 0
+  hotspotIcon: 0
+  hotspotIconTexture: {fileID: 0}
+  hotspotIconSize: .0399999991
+  navMeshRaycastLength: 100
+  hotspotRaycastLength: 100
+  hotspotLayer: Default
+  navMeshLayer: NavMesh
+  backgroundImageLayer: BackgroundImage
+  deactivatedLayer: Ignore Raycast

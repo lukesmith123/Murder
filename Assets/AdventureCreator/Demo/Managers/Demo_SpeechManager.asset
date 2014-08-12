@@ -1,0 +1,666 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e62d8d078be49cf8ad9ebe2efcaeb2, type: 3}
+  m_Name: Demo_SpeechManager
+  m_EditorClassIdentifier: 
+  textScrollSpeed: 50
+  screenTimeFactor: .100000001
+  allowSpeechSkipping: 0
+  allowGameplaySpeechSkipping: 0
+  searchAudioFiles: 1
+  forceSubtitles: 1
+  translateAudio: 0
+  scrollSubtitles: 1
+  endScrollBeforeSkip: 0
+  separateLines: 0
+  separateLinePause: .100000001
+  lines:
+  - lineID: 2
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: How did you go from being a wrestler to shooting a promo for a game engine?
+    textType: 0
+    translationText:
+    - "Comment avez-vous d'\xEAtre un lutteur \xE0 tirer une promo pour un moteur
+      de jeu?"
+  - lineID: 3
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Well, being a professional sportsman, I'm used to sellings things with my
+      natural charisma.
+    textType: 0
+    translationText:
+    - "Eh bien, \xE9tant un sportif professionnel, je suis habitu\xE9 \xE0 sellings
+      choses avec mon charisme naturel."
+  - lineID: 7
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Plus, I live just across the street.
+    textType: 0
+    translationText:
+    - De plus, j'habite juste en face de la rue.
+  - lineID: 22
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: Let's .. call that one for the outtake reel.
+    textType: 0
+    translationText:
+    - "Disons .. appeler celui-l\xE0 pour la bobine Outtake."
+  - lineID: 23
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: What can you tell me about Adventure Creator?
+    textType: 0
+    translationText:
+    - "Que pouvez-vous me dire \xE0 propos de Adventure Creator?"
+  - lineID: 24
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Glad you asked, my robot chum!
+    textType: 0
+    translationText:
+    - Bonne question, mon ami robot!
+  - lineID: 28
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Adventure Creator is a Unity package that you can use to make your own 3D
+      adventure games.  No scripting, loads of features - everything from saving and
+      loading to multiple play styles and translation support.
+    textType: 0
+    translationText:
+    - "Adventure Creator est un ensemble Unity que vous pouvez utiliser pour cr\xE9er
+      vos propres jeux d'aventure 3D. Pas de scripts, des charges de fonctionnalit\xE9s
+      - tout de sauvegarder et de charger \xE0 plusieurs styles de jeu et le soutien
+      de la traduction."
+  - lineID: 29
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: That sounds great!  Tell me more!
+    textType: 0
+    translationText:
+    - Cela sonne bien! Dites-moi plus!
+  - lineID: 39
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: I would, but I forgot the rest of my lines.
+    textType: 0
+    translationText:
+    - "J'aimerais bien, mais j'ai oubli\xE9 le reste de mes lignes."
+  - lineID: 30
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: I'd better not harm the talent - we haven't paid for insurance.
+    textType: 0
+    translationText:
+    - "Je ferais mieux de ne pas nuire aux talents - nous n'avons pas pay\xE9 l'assurance."
+  - lineID: 31
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: I'd better go back to fixing the set.
+    textType: 0
+    translationText:
+    - "Je ferais mieux de retourner \xE0 la fixation de l'ensemble."
+  - lineID: 32
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Take your time, I'm paid by the hour!
+    textType: 0
+    translationText:
+    - "Prenez votre temps, je suis pay\xE9 \xE0 l'heure!"
+  - lineID: 0
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: Looks like a poster for some kind of 2D videogame.
+    textType: 0
+    translationText:
+    - "On dirait une affiche pour une sorte de jeu vid\xE9o 2D."
+  - lineID: 1
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: 2D? (Shudder)
+    textType: 0
+    translationText:
+    - 2D? (Frisson)
+  - lineID: 33
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: Could you help me lift up the canvas?
+    textType: 0
+    translationText:
+    - "Pourriez-vous m'aider l\xE8ve la toile?"
+  - lineID: 34
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: I totally would, but those health and safety guys could make a sudden appearance
+      at any moment!
+    textType: 0
+    translationText:
+    - "Je serais tout \xE0 fait, mais ces gars de sant\xE9 et de s\xE9curit\xE9 pourrait
+      faire une apparition soudaine \xE0 tout moment!"
+  - lineID: 8
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: If you're going upstairs, can you make me a sandwich?
+    textType: 0
+    translationText:
+    - "Si vous allez \xE0 l'\xE9tage, pouvez-vous me faire un sandwich?"
+  - lineID: 11
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Hi!
+    textType: 0
+    translationText:
+    - Salut!
+  - lineID: 12
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Welcome to the demo!  I'm the Brain, and this-
+    textType: 0
+    translationText:
+    - "Bienvenue sur la d\xE9mo! Je suis The Brain, et ce-"
+  - lineID: 40
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: Seeing as the barrel's holding toxic waste, I don't think I should go about
+      prising the lid off.
+    textType: 0
+    translationText:
+    - "Voyant que la tenue de d\xE9chets toxiques du baril, je ne pense pas que je
+      devrais aller sur la faisant levier le couvercle."
+  - lineID: 9
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: I have ... the power!
+    textType: 0
+    translationText:
+    - J'ai ... le pouvoir!
+  - lineID: 10
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Heh, your enthusiasm "sword".
+    textType: 0
+    translationText:
+    - "Heh, vous \xEAtes enthousiasme grimp\xE9 en fl\xE8che."
+  - lineID: 13
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: This barrel's stopped right in front of the canvas.
+    textType: 0
+    translationText:
+    - "Ce canon a cess\xE9 juste en face de la toile."
+  - lineID: 14
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: I'm not really sure what else I can do with it, just by itself.
+    textType: 0
+    translationText:
+    - "Je ne suis pas vraiment s\xFBr de ce que je peux faire avec elle, par elle-m\xEAme."
+  - lineID: 35
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: Did you see that?  It fell over all by itself!
+    textType: 0
+    translationText:
+    - "Avez-vous vu cela? Il est tomb\xE9 sur lui tout seul!"
+  - lineID: 4
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: I wonder where this door leads.
+    textType: 0
+    translationText:
+    - "Je me demande o\xF9 cette porte m\xE8ne."
+  - lineID: 5
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Nowhere, it's just set decoration.
+    textType: 0
+    translationText:
+    - "Nulle part, il est juste install\xE9 d\xE9coration."
+  - lineID: 6
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: Well, that would explain the poor texturing.
+    textType: 0
+    translationText:
+    - Eh bien, cela expliquerait la mauvaise texturing.
+  - lineID: 15
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: I tell my agent I wanna star in a videogame, and he gets me an engine promo..
+    textType: 0
+    translationText:
+    - "Je dis \xE0 mon agent que je veux jouer dans un jeu vid\xE9o, et il me met
+      un moteur promo .."
+  - lineID: 16
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Well, not my job to fix it!
+    textType: 0
+    translationText:
+    - "Eh bien, pas \xE0 moi de r\xE9soudre le probl\xE8me!"
+  - lineID: 17
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: Not to worry, sir!
+    textType: 0
+    translationText:
+    - "Ne vous inqui\xE9tez pas, monsieur!"
+  - lineID: 18
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: As the engine's mascot, I just LOVE solving puzzles!
+    textType: 0
+    translationText:
+    - "Comme la mascotte du moteur, j'adore r\xE9soudre des \xE9nigmes!"
+  - lineID: 19
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Remind me to grab you for my crossword later.
+    textType: 0
+    translationText:
+    - "Rappelez-moi de vous prendre pour mon crois\xE9s plus tard."
+  - lineID: 36
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: I found a fake sword!
+    textType: 0
+    translationText:
+    - "J'ai trouv\xE9 une fausse \xE9p\xE9e!"
+  - lineID: 37
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Hm.  Props to you.
+    textType: 0
+    translationText:
+    - "Hm. Remerciements \xE0 vous."
+  - lineID: 41
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: It's no use - I need some kind of leverage to lift it.
+    textType: 0
+    translationText:
+    - "Il ne sert \xE0 rien - j'ai besoin d'une sorte d'effet de levier pour la soulever."
+  - lineID: 25
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Wah! Are you OK?
+    textType: 0
+    translationText:
+    - "Wah! \xCAtes-vous d'accord?"
+  - lineID: 26
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: Don't worry!
+    textType: 0
+    translationText:
+    - "Ne vous inqui\xE9tez pas!"
+  - lineID: 27
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Woohoo! And THAT'S how I saved the day!
+    textType: 0
+    translationText:
+    - "Woohoo! Et c'est comme \xE7a que j'ai sauv\xE9 la journ\xE9e!"
+  - lineID: 20
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: Sir?
+    textType: 0
+    translationText:
+    - Monsieur?
+  - lineID: 21
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Brain
+    text: Hey, little robot!
+    textType: 0
+    translationText:
+    - "H\xE9, petit robot!"
+  - lineID: 38
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: Player
+    text: I thought this set'd have better production values.
+    textType: 0
+    translationText:
+    - Je pensais que ce set'd ont de meilleures valeurs de production.
+  - lineID: 42
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Pinboard
+    textType: 1
+    translationText:
+    - "Je ne peux pas couper \xE7a."
+  - lineID: 43
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Barrel
+    textType: 1
+    translationText:
+    - Baril
+  - lineID: 44
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Door
+    textType: 1
+    translationText:
+    - Porte
+  - lineID: 45
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Canvas
+    textType: 1
+    translationText:
+    - Canvas
+  - lineID: 46
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Stairs
+    textType: 1
+    translationText:
+    - Escalier
+  - lineID: 47
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Prop sword
+    textType: 1
+    translationText:
+    - "Ep\xE9e prop"
+  - lineID: 48
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Camera
+    textType: 1
+    translationText:
+    - "Cam\xE9ra"
+  - lineID: 49
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Barrel
+    textType: 1
+    translationText:
+    - Baril
+  - lineID: 50
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Brain
+    textType: 1
+    translationText:
+    - Brain
+  - lineID: 51
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Never mind.
+    textType: 2
+    translationText:
+    - Ce n'est rien.
+  - lineID: 52
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: It wasn't me.
+    textType: 2
+    translationText:
+    - "Ce n'\xE9tait pas moi."
+  - lineID: 55
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: It's not my fault!
+    textType: 2
+    translationText:
+    - Ce n'est pas de ma faute!
+  - lineID: 56
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: '...'
+    textType: 2
+    translationText:
+    - "\u2026"
+  - lineID: 57
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Adventure Creator
+    textType: 2
+    translationText:
+    - "Aventure Cr\xE9ateur"
+  - lineID: 58
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Help
+    textType: 2
+    translationText:
+    - Aider
+  - lineID: 59
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Brain
+    textType: 2
+    translationText:
+    - Brain
+  - lineID: 60
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Sword
+    textType: 2
+    translationText:
+    - "Ep\xE9e"
+  - lineID: 61
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Bye
+    textType: 2
+    translationText:
+    - Adieu
+  - lineID: 42
+    scene: 
+    owner: Player
+    text: I can't cut that.
+    textType: 0
+    translationText:
+    - "Je ne peux pas couper \xE7a."
+  - lineID: 53
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Fake sword
+    textType: 3
+    translationText:
+    - "Ep\xE9e prop"
+  - lineID: 54
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Use
+    textType: 6
+    translationText:
+    - Utilisez
+  - lineID: 62
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: on
+    textType: 6
+    translationText:
+    - sur
+  - lineID: 63
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Use
+    textType: 4
+    translationText:
+    - Utilisez
+  - lineID: 64
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Talk to
+    textType: 4
+    translationText:
+    - "Parlez-en \xE0"
+  - lineID: 65
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: 
+    text: Look at
+    textType: 4
+    translationText:
+    - Regarder
+  - lineID: 66
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: ResumeButton
+    text: Resume
+    textType: 5
+    translationText:
+    - Recommencer
+  - lineID: 67
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: OptionsButton
+    text: Options
+    textType: 5
+    translationText:
+    - Les options
+  - lineID: 68
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: SaveButton
+    text: Save
+    textType: 5
+    translationText:
+    - Sauver
+  - lineID: 69
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: LoadButton
+    text: Load
+    textType: 5
+    translationText:
+    - Restaurer
+  - lineID: 70
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: QuitButton
+    text: Quit
+    textType: 5
+    translationText:
+    - Quitter
+  - lineID: 71
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: TitleLabel
+    text: Options
+    textType: 5
+    translationText:
+    - Les options
+  - lineID: 72
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: SpeechSlider
+    text: Speech volume
+    textType: 5
+    translationText:
+    - Volume de la voix
+  - lineID: 73
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: MusicSlider
+    text: Music volume
+    textType: 5
+    translationText:
+    - Volume de la musique
+  - lineID: 74
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: SFXSlider
+    text: SFX volume
+    textType: 5
+    translationText:
+    - Le volume du son
+  - lineID: 75
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: LanguageCycle
+    text: Language
+    textType: 5
+    translationText:
+    - Langue
+  - lineID: 76
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: SubtitlesToggle
+    text: Subtitles
+    textType: 5
+    translationText:
+    - Sous-titres
+  - lineID: 77
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: BackButton
+    text: Back
+    textType: 5
+    translationText:
+    - Reculer
+  - lineID: 78
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: TitleLabel
+    text: Save game
+    textType: 5
+    translationText:
+    - Sauver le jeu
+  - lineID: 79
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: BackButton
+    text: Back
+    textType: 5
+    translationText:
+    - Reculer
+  - lineID: 80
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: TitleLabel
+    text: Load game
+    textType: 5
+    translationText:
+    - Restaurer le jeu
+  - lineID: 81
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: BackButton
+    text: Back
+    textType: 5
+    translationText:
+    - Reculer
+  - lineID: 82
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: ShiftLeft
+    text: <
+    textType: 5
+    translationText:
+    - <
+  - lineID: 83
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: ShiftRight
+    text: '>'
+    textType: 5
+    translationText:
+    - '>'
+  - lineID: 84
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: MenuButton
+    text: Menu
+    textType: 5
+    translationText:
+    - Menu
+  - lineID: 85
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: HotspotLabel
+    text: Test
+    textType: 5
+    translationText:
+    - Test
+  - lineID: 86
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: SubsSpeakerLabel
+    text: Brain
+    textType: 5
+    translationText:
+    - Brain
+  - lineID: 87
+    scene: Assets/AdventureCreator/Demo/Scenes/Basement.unity
+    owner: SubsLineLabel
+    text: Hi!
+    textType: 5
+    translationText:
+    - Hi!
+  languages:
+  - Original
+  - French
+  sceneFiles:
+  - Assets/AdventureCreator/Demo/Scenes/Basement.unity

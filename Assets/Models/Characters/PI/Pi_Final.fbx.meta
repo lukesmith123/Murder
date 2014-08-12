@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: ca0f2ebec856ae44696afeab143d75b0
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Chest
+    100002: Head
+    100004: L_Ball
+    100006: L_Elbow
+    100008: L_Foot
+    100010: L_Hip
+    100012: L_Knee
+    100014: L_Ling1
+    100016: L_Ling2
+    100018: L_Ling3
+    100020: L_Middle1
+    100022: L_Middle2
+    100024: L_Middle3
+    100026: L_Pinky1
+    100028: L_Pinky2
+    100030: L_Pinky3
+    100032: L_Pointer1
+    100034: L_Pointer2
+    100036: L_Pointer3
+    100038: L_Shoulder
+    100040: L_Thumb1
+    100042: L_Thumb2
+    100044: L_Thumb3
+    100046: L_Toe
+    100048: L_Wrist
+    100050: L_Wrist 1
+    100052: MOUTH_BL
+    100054: MOUTH_BR
+    100056: Mouth_TL
+    100058: Mouth_TR
+    100060: Neck
+    100062: //RootNode
+    100064: PrivateInvestigator
+    100066: R_Ball
+    100068: R_Elbow
+    100070: R_Foot
+    100072: R_Hip
+    100074: R_Knee
+    100076: R_Middle1
+    100078: R_Middle2
+    100080: R_Middle3
+    100082: R_Pinky1
+    100084: R_Pinky2
+    100086: R_Pinky3
+    100088: R_Pointer1
+    100090: R_Pointer2
+    100092: R_Pointer3
+    100094: R_Ring1
+    100096: R_Ring2
+    100098: R_Ring3
+    100100: R_Shoulder
+    100102: R_Thumb1
+    100104: R_Thumb2
+    100106: R_Thumb3
+    100108: R_Toe
+    100110: R_Wrist
+    100112: R_Wrist 1
+    100114: ROOT
+    100116: Spine2
+    100118: Waist
+    400000: Chest
+    400002: Head
+    400004: L_Ball
+    400006: L_Elbow
+    400008: L_Foot
+    400010: L_Hip
+    400012: L_Knee
+    400014: L_Ling1
+    400016: L_Ling2
+    400018: L_Ling3
+    400020: L_Middle1
+    400022: L_Middle2
+    400024: L_Middle3
+    400026: L_Pinky1
+    400028: L_Pinky2
+    400030: L_Pinky3
+    400032: L_Pointer1
+    400034: L_Pointer2
+    400036: L_Pointer3
+    400038: L_Shoulder
+    400040: L_Thumb1
+    400042: L_Thumb2
+    400044: L_Thumb3
+    400046: L_Toe
+    400048: L_Wrist
+    400050: L_Wrist 1
+    400052: MOUTH_BL
+    400054: MOUTH_BR
+    400056: Mouth_TL
+    400058: Mouth_TR
+    400060: Neck
+    400062: //RootNode
+    400064: PrivateInvestigator
+    400066: R_Ball
+    400068: R_Elbow
+    400070: R_Foot
+    400072: R_Hip
+    400074: R_Knee
+    400076: R_Middle1
+    400078: R_Middle2
+    400080: R_Middle3
+    400082: R_Pinky1
+    400084: R_Pinky2
+    400086: R_Pinky3
+    400088: R_Pointer1
+    400090: R_Pointer2
+    400092: R_Pointer3
+    400094: R_Ring1
+    400096: R_Ring2
+    400098: R_Ring3
+    400100: R_Shoulder
+    400102: R_Thumb1
+    400104: R_Thumb2
+    400106: R_Thumb3
+    400108: R_Toe
+    400110: R_Wrist
+    400112: R_Wrist 1
+    400114: ROOT
+    400116: Spine2
+    400118: Waist
+    4300000: PrivateInvestigator
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: PrivateInvestigator
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .119999997
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
