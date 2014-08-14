@@ -1679,7 +1679,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.96934056, y: .193336964, z: 1.97608852}
+  m_LocalPosition: {x: -2.96934056, y: .193336964, z: 4.67024231}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400116}
@@ -1778,7 +1778,7 @@ MonoBehaviour:
   walkAnim: {fileID: 7400000, guid: f87124df3cc642128666c685791b91cb, type: 2}
   runAnim: {fileID: 7400000, guid: 418c52d7c5914afd90ddf0564f9b7a0f, type: 2}
   talkAnim: {fileID: 0}
-  turnLeftAnim: {fileID: 7400000, guid: db5da5c83fb042dfbfe5a346e4999e9e, type: 2}
+  turnLeftAnim: {fileID: 7400000, guid: 21dc7d48ddf04d258e50c8e69ae984cf, type: 2}
   turnRightAnim: {fileID: 7400000, guid: ec54a44e05b4460aa396f3890a713201, type: 2}
   upperBodyBone: {fileID: 0}
   leftArmBone: {fileID: 0}
