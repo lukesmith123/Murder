@@ -20,7 +20,7 @@ MonoBehaviour:
   movementMethod: 0
   inputMethod: 0
   interactionMethod: 0
-  hotspotDetection: 0
+  hotspotDetection: 1
   cancelInteractions: 0
   hotspotsInVicinity: 0
   hideLockedCursor: 0
